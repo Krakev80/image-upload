@@ -1,4 +1,4 @@
-
+// Config linking page to Google Firebase Project
  const firebaseConfig = {
     /*apiKey: "AIzaSyBYwa7ifHMP_z1MsZ7CBRTGY_aqnSp4XeE",
     authDomain: "image-upload-39545.firebaseapp.com",
@@ -17,6 +17,7 @@
   
 	firebase.initializeApp(firebaseConfig);
 
+//Choose files
 var files = [];
 document.getElementById("files").addEventListener("change", function(e) {
   files = e.target.files;
@@ -25,7 +26,7 @@ document.getElementById("files").addEventListener("change", function(e) {
   }
 });
 
-
+//File selected 
 document.getElementById("send").addEventListener("click", function() {
   //checks if files are selected
   if (files.length != 0) {
@@ -43,7 +44,7 @@ document.getElementById("send").addEventListener("click", function() {
       //upload file
       var upload = storage.put(files[i]);
 	  
-      //update progress bar
+      //update progress bar (currently hidden on page)
       upload.on(
         "state_changed",
         function progress(snapshot) {
@@ -59,9 +60,8 @@ document.getElementById("send").addEventListener("click", function() {
         function complete() {
           document.getElementById(
             "uploading"
-          //).innerHTML += `${files[i].name} upoaded <br />`;
-		  ).innerHTML = "Uploaded Successfully";
-
+         // ).innerHTML += `${files[i].name} upoaded <br />`;
+	    ).innerHTML = "Uploaded Successfully";
 		 }
       );
     }
@@ -72,7 +72,6 @@ document.getElementById("send").addEventListener("click", function() {
  });
  
 //const storage = firebase.storage();
-
 //storage.ref('AJFC.jpg').getDownloadURL()
 //  .then((url) => {
 //    console.log(url);
@@ -94,6 +93,7 @@ document.getElementById("send").addEventListener("click", function() {
     });
 }
 
+//Not being used anymore - box animation is currently hidden
 /*var playPause = anime({
 	targets: 'div.box',
 	translateY: [
@@ -120,7 +120,7 @@ document.querySelector('#boxes .pause').onclick = playPause.pause;
 playPause.play();
 */
 
-
+//These are not currently displayed on the page 
 anime({
 	targets: 'div.box.red',
 	translateY: [
@@ -173,6 +173,8 @@ anime({
 	}
 	
 });
+
+//These are not currently displayed on the page 
 const boxesAnimation = window.anime({
   targets: '.js-box',
   translateY: [150, 50],
@@ -194,7 +196,7 @@ const boxesAnimation = window.anime({
   
 });
 
-
+//Word animation 
 let animation = anime({
   targets: '.letter',
   opacity: 1,

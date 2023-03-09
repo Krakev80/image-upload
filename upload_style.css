@@ -51,15 +51,15 @@ button {
 /*
 @media(max-width: 435px) {
 	body {
-			background-image: url("sunv7.jpg");
+	background-image: url("sunv7.jpg");
 
 	}
 }*/
 
 @media(max-width: 830px) {
 	body {
-			background-image: url("sunv7.jpg");
-justify-content: start;
+	background-image: url("sunv7.jpg");
+	justify-content: start;
 	}
 }
 

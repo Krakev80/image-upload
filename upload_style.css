@@ -45,15 +45,15 @@ button {
 {
 	height: 100vh;
 }
-
+/*
 @media(max-width: 435px) {
 	body {
 			background-image: url("sunv7.jpg");
 
 	}
-}
+}*/
 
-@media(max-width: 600px) {
+@media(max-width: 590px) {
 	body {
 			background-image: url("sunv7.jpg");
 

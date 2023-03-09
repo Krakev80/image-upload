@@ -2,6 +2,7 @@
 
 *{
 	box-sizing: border-box;
+
 	
 }
 
@@ -9,22 +10,25 @@
 body {
 	
 	background-color: ##e3edf7;
-	height: 70vh;
+	/*height: 150px;*/
 	display: flex;
-	align-items: center;
+	/*align-items: center;*/
 	justify-content: center;
 	font-family: 'Lato'; sans-serif;
 	background-image: url("sunv4.jpg");
 	color: white;
+	font-weight: bolder;
 	background-size: cover;
 	background-repeat: no-repeat;
+	min-height: 750px;
 
 }
 
 .upload {
 	
 	position: relative;
-	padding-left: 30px;
+	padding-left: 30px;	
+
 	/*text-align: center;*/
 }
 
@@ -53,10 +57,10 @@ button {
 	}
 }*/
 
-@media(max-width: 590px) {
+@media(max-width: 830px) {
 	body {
 			background-image: url("sunv7.jpg");
-
+justify-content: start;
 	}
 }
 

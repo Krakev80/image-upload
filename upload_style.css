@@ -2,17 +2,11 @@
 
 *{
 	box-sizing: border-box;
-
-	
 }
 
-	
 body {
-	
 	background-color: ##e3edf7;
-	/*height: 150px;*/
 	display: flex;
-	/*align-items: center;*/
 	justify-content: center;
 	font-family: 'Lato'; sans-serif;
 	background-image: url("sunv4.jpg");
@@ -21,19 +15,14 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 750px;
-
 }
 
 .upload {
-	
 	position: relative;
 	padding-left: 30px;	
-
-	/*text-align: center;*/
 }
 
 button {
-	
 	display: inline;
 	padding: 10px 30px;
 	cursor: pointer;
@@ -42,69 +31,25 @@ button {
 	border: none;
 	border-radius: 5px;
 	margin-top: 20px;
-	
-	
 }
-#img
-{
-	height: 100vh;
-}
-/*
-@media(max-width: 435px) {
-	body {
-			background-image: url("sunv7.jpg");
-
-	}
-}*/
 
 @media(max-width: 830px) {
 	body {
-			background-image: url("sunv7.jpg");
-justify-content: start;
+	background-image: url("sunv7.jpg");
+	justify-content: start;
 	}
 }
 
-
-.box{
-	position: relative;
-	width: 20px;
-	height: 20px;
-	/*margin: 4px;*/
-	display: inline-block;
-	/*border-radius: 50%;*/
-	
-}
-.red{background-color: #2565AE}
-.blue{background-color: #2565AE}
-.green{background-color: #2565AE}
-.yellow{background-color: #2565AE}
-
-.boxes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.boxes__inner {
-  display: flex;
-  overflow: hidden;
-  height: 70px;
-}
-
-
 .letter {
-  display: inline-block;
-  opacity: 0;
+  	display: inline-block;
+ 	opacity: 0;
 }
 
 div {
-  display: inline-block;
+ 	 display: inline-block;
 }
 
 h1 {
-	
 	height: 100px;
 	inline-size: 190px;
-	
-	
 }

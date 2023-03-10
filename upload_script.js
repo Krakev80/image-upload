@@ -60,7 +60,6 @@ document.getElementById("send").addEventListener("click", function() {
         function complete() {
           document.getElementById(
             "uploading"
-         // ).innerHTML += `${files[i].name} upoaded <br />`;
 	    ).innerHTML = "Uploaded Successfully";
 		 }
       );
@@ -71,13 +70,6 @@ document.getElementById("send").addEventListener("click", function() {
 
  });
  
-//const storage = firebase.storage();
-//storage.ref('AJFC.jpg').getDownloadURL()
-//  .then((url) => {
-//    console.log(url);
-//  })
-
-
   function getFileUrl(filename) {
   //create a storage reference
   var storage = firebase.storage().ref(filename);
@@ -92,109 +84,6 @@ document.getElementById("send").addEventListener("click", function() {
       console.log("error encountered");
     });
 }
-
-//Not being used anymore - box animation is currently hidden
-/*var playPause = anime({
-	targets: 'div.box',
-	translateY: [
-	{ value: 200, duration: 500 },
-	{ value: 0, duration: 800}
-	],
-	rotate: {
-	value: '1turn',
-	//easing: 'easeInOutSine'  
-	easing: 'easeOutExpo'
-
-	},
-	
-	delay: function(el, i, l){ return i * 1300},
-	autoplay: false,
-	loop:true
-});
-
-document.querySelector('#boxes .play').onclick = playPause.play;
-document.querySelector('#boxes .pause').onclick = playPause.pause;
-
-
-
-playPause.play();
-*/
-
-//These are not currently displayed on the page 
-anime({
-	targets: 'div.box.red',
-	translateY: [
-	{ value: -50, duration: 400 },
-	{ value: 0, duration: 600}
-	],
-	rotate: {
-	value: '1turn',
-	easing: 'easeInOutSine'
-	}
-});
-
-anime({
-	targets: 'div.box.blue',
-	translateY: [
-	{ value: -50, duration: 400, delay: 300 },
-	{ value: 0, duration: 600}
-	],
-	rotate: {
-	value: '1turn',
-	easing: 'easeInOutSine',
-	delay: 400
-	}
-});
-
-anime({
-	targets: 'div.box.green',
-	translateY: [
-	{ value: -50, duration: 400, delay: 600 },
-	{ value: 0, duration: 600}
-	],
-	rotate: {
-	value: '1turn',
-	easing: 'easeInOutSine',
-	delay: 800
-	}
-});
-
-anime({
-	targets: 'div.box.yellow',
-	translateY: [
-	{ value: -50, duration: 800, delay: 900 },
-	{ value: 0, duration: 800}
-	],
-	
-	rotate: {
-	value: '1turn',
-	easing: 'easeInOutSine',
-	delay: 1200
-	}
-	
-});
-
-//These are not currently displayed on the page 
-const boxesAnimation = window.anime({
-  targets: '.js-box',
-  translateY: [150, 50],
-  
-  backgroundColor: (el, i, t) => {
-    const r = 58 + (i * 12);
-    const g = 35 + (i * 12);
-    const b = 220;
-    const color = `rgb(${r}, ${g}, ${b})`;
-    return color;
-	 
-  },
-  duration: 900,
-  easing: 'easeOutElastic',
-  elasticity: 500,
-  delay: (el, i, t) => i * 20,
-  //loop: true,
-  //direction: 'alternative',
-  
-});
 
 //Word animation 
 let animation = anime({
